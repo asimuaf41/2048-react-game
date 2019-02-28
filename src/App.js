@@ -319,7 +319,7 @@ class App extends Component {
       <div className="App">
        <center> <h3 className="heading" >2048 completion game</h3></center>
         <p>join the numbers and get 2048 tile!. Use the buttons or arrow keys to play game.</p>
-        <div className="button" onClick={() => {this.initBoard()}}>New Game</div>
+        <div className="button1" onClick={() => {this.initBoard()}}>New Game</div>
                 
                 <table>
                   {this.state.board.map((row, i) => (<Row key={i} row={row} />))}
@@ -330,9 +330,10 @@ class App extends Component {
                 
                 <div className="buttons">
                   <div className="button" onClick={() => {this.move('up')}}>Up</div>
-                  <div className="button" onClick={() => {this.move('right')}}>Right</div>
+               
                   <div className="button" onClick={() => {this.move('down')}}>Down</div>
                   <div className="button" onClick={() => {this.move('left')}}>Left</div>
+                  <div className="button" onClick={() => {this.move('right')}}>Right</div>
                 </div>
                 
                

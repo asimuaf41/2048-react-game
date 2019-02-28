@@ -1,35 +1,119 @@
-.App {
-  text-align: center;
-}
+
 
 body {
-  font-family: 'Lucida Sans Unicode';
+  font-family: 'Monoton', cursive;
+
   background: #b0c9c1;
   background: -webkit-linear-gradient(to left, #43cea2 , #185a9d);
   background: linear-gradient(to left, #c5979f9d , #bb4f67);
 }
 
-h1 {
-  text-align: center;
-  font-size: 50px;
+@media (max-width:1500px) and (min-width:600px){
+  .heading{
+    color: white;
+    background-color: crimson;
+    width: 300px;
+  
+  }
+  .buttons {
+    margin: 0 auto;
+    display: flex;
+    width: 500px;
+  }
+  .cell {
+    height: 70px;
+    width: 70px;
+    background-color: #303030;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    background-color: #303030;
+    color: #50C8FF;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  .App p{
+    padding: 5px;
+  }
+  .score {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: crimson;
+    width: 20%;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: 600;
+  }
+}
+@media (max-width:600px) and (min-width:200px){
+  
+  .buttons {
+    margin: 0 auto;
+    display: flex;
+    width: 300px;
+  }
+  .cell {
+    height: 50px;
+    width: 50px;
+    background-color: #303030;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading{
+    color: white;
+    background-color: crimson;
+    width: 230px;
+   
+  
+  }
+  .button {
+    background-color: #303030;
+    color: #50C8FF;
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  .App p{
+    padding: 5px;
+  }
+  .score {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: crimson;
+    width: 40%;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: 600;
+  }
 }
 
-p {
-  text-align: center;
-}
-
-table {
-  margin: 0 auto;
-  border:10px solid #303030;
-}
-
-.buttons {
-  margin: 0 auto;
-  display: flex;
-  width: 500px;
-}
-
-.button {
+.button1 {
   background-color: #303030;
   color: #50C8FF;
   height: 30px;
@@ -46,21 +130,25 @@ table {
   transition: background-color 0.5s, color 0.5s;
 }
 
+
+p {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border:7px solid #303030;
+}
+
+
+
 .button:hover {
   background-color: black;
   color: white;
   transition: background-color 0.5s, color 0.5s;
 }
 
-.cell {
-  height: 70px;
-  width: 70px;
-  background-color: #303030;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .color-2 {
   background-color: rgb(21, 78, 126);
@@ -111,19 +199,4 @@ table {
   font-size: 25px;
 }
 
-.score {
-  text-align: center;
-  margin-bottom: 20px;
-  color: white;
-  background-color: crimson;
-  width: 20%;
-  border-radius: 10px;
-  padding: 3px;
-  font-weight: 600;
-}
-.heading{
-  color: white;
-  background-color: crimson;
-  width: 300px;
 
-}
